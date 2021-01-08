@@ -3,15 +3,16 @@ import {View, Button, StyleSheet} from 'react-native'
 
 export const MainScreen = props => {
     return (
-        <View style={styles.block}>
-            <Button title="Войти" />
-            <Button title="Зарегистрироватся"/>
+        <View>
+            <Button title="Войти"/>
+            <Button style={styles.registred} title="Зарегистрироватся"/>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    block: {
-
+    registred: {
+        padding: 30,
+        margin: 30
     }
 })
